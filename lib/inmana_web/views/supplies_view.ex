@@ -1,10 +1,12 @@
-defmodule InmanaWeb.RestaurantsView do
+defmodule InmanaWeb.SuppliesView do
   use InmanaWeb, :view
 
-  def render("create.json", %{restaurant: restaurant}) do
+  def render("create.json", %{supply: supply}) do
     %{
-      message: "Restaurant created!",
-      restaurant: restaurant
+      message: "Supply created!",
+      supply: supply
     }
   end
+
+  def render("show.json", %{supply: supply}), do: %{supply: supply}
 end
